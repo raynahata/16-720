@@ -1,0 +1,463 @@
+Last login: Tue Jan 16 14:35:37 on ttys000
+(base) raynahata@Raynas-MBP ~ % conda activate cv 
+(cv) raynahata@Raynas-MBP ~ % cd /Users/raynahata/Desktop/Github/16-720/hw0 
+(cv) raynahata@Raynas-MBP hw0 %  2
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8
+python run.py --allwarmups
+zsh: command not found: 2
+zsh: command not found: 1
+zsh: command not found: 1
+zsh: command not found: 1
+python: can't open file 'run.py': [Errno 2] No such file or directory
+(cv) raynahata@Raynas-MBP hw0 % puthon run.py --allwamups
+zsh: command not found: puthon
+(cv) raynahata@Raynas-MBP hw0 % python run.py --allwamups
+python: can't open file 'run.py': [Errno 2] No such file or directory
+(cv) raynahata@Raynas-MBP hw0 % cd /Users/raynahata/Desktop/Github/16-720/hw0/numpy
+(cv) raynahata@Raynas-MBP numpy % python run.py --allwamups
+usage: run.py [-h] [--test TEST] [--allwarmups] [--alltests] [--allconvs]
+              [--store] [--pdb]
+run.py: error: unrecognized arguments: --allwamups
+(cv) raynahata@Raynas-MBP numpy % python run.py --allwarmups
+Running w1
+Running w2
+Running w3
+Running w4
+Running w5
+Running w6
+Running w7
+Running w8
+Running w9
+Running w10
+Running w11
+Running w12
+Running w13
+Running w14
+Running w15
+Running w16
+Running w17
+Running w18
+Running w19
+Running w20
+Ran warmup tests
+20/20 = 100.0
+(cv) raynahata@Raynas-MBP numpy % python run.py --alltests
+Running t1
+Running t2
+Running t3
+Running t4
+Running t5
+Running t6
+Running t7
+Running t8
+Running t9
+Running t10
+Crashed! On t10 seed 442
+Traceback (most recent call last):
+  File "run.py", line 98, in main
+    res = test_fn(data)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 209, in t10
+    return t11(mean)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 235, in t11
+    xx = np.sum(X*X,1,keepdims=True)
+  File "<__array_function__ internals>", line 200, in sum
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2324, in sum
+    return _wrapreduction(a, np.add, 'sum', axis, dtype, out, keepdims=keepdims,
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+numpy.AxisError: axis 1 is out of bounds for array of dimension 1
+
+axis 1 is out of bounds for array of dimension 1
+Running t11
+Running t12
+Running t13
+Running t14
+/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py:289: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  return np.linalg.lstsq(X,y)[0]
+Running t15
+Running t16
+Running t17
+Running t18
+Running t19
+Running t20
+Ran all tests
+19/20 = 95.0
+(cv) raynahata@Raynas-MBP numpy % python run.py --alltests
+Running t1
+Running t2
+Running t3
+Running t4
+Running t5
+Running t6
+Running t7
+Running t8
+Running t9
+Running t10
+Crashed! On t10 seed 442
+Traceback (most recent call last):
+  File "run.py", line 98, in main
+    res = test_fn(data)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 209, in t10
+    return t11(mean)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 235, in t11
+    xx = np.sum(X*X,1,keepdims=True)
+  File "<__array_function__ internals>", line 200, in sum
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2324, in sum
+    return _wrapreduction(a, np.add, 'sum', axis, dtype, out, keepdims=keepdims,
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+numpy.AxisError: axis 1 is out of bounds for array of dimension 1
+
+axis 1 is out of bounds for array of dimension 1
+Running t11
+Running t12
+Running t13
+Running t14
+/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py:289: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  return np.linalg.lstsq(X,y)[0]
+Running t15
+Running t16
+Running t17
+Running t18
+Running t19
+Running t20
+Ran all tests
+19/20 = 95.0
+(cv) raynahata@Raynas-MBP numpy % python run.py --alltests  
+Running t1
+Running t2
+Running t3
+Running t4
+Running t5
+Running t6
+Running t7
+Running t8
+Running t9
+Running t10
+Crashed! On t10 seed 442
+Traceback (most recent call last):
+  File "run.py", line 98, in main
+    res = test_fn(data)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 209, in t10
+    return t11(mean)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 235, in t11
+    xx = np.sum(X*X,1,keepdims=True)
+  File "<__array_function__ internals>", line 200, in sum
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2324, in sum
+    return _wrapreduction(a, np.add, 'sum', axis, dtype, out, keepdims=keepdims,
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+numpy.AxisError: axis 1 is out of bounds for array of dimension 1
+
+axis 1 is out of bounds for array of dimension 1
+Running t11
+Running t12
+Running t13
+Running t14
+Crashed! On t14 seed 442
+Traceback (most recent call last):
+  File "run.py", line 96, in main
+    res = test_fn(*data)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 289, in t14
+    return np.linalg.solve(X,y)[0]
+  File "<__array_function__ internals>", line 200, in solve
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 373, in solve
+    _assert_stacked_square(a)
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/linalg/linalg.py", line 190, in _assert_stacked_square
+    raise LinAlgError('Last 2 dimensions of the array must be square')
+numpy.linalg.LinAlgError: Last 2 dimensions of the array must be square
+
+Last 2 dimensions of the array must be square
+Running t15
+Running t16
+Running t17
+Running t18
+Running t19
+Running t20
+Ran all tests
+18/20 = 90.0
+(cv) raynahata@Raynas-MBP numpy % python run.py --alltests
+Running t1
+Running t2
+Running t3
+Running t4
+Running t5
+Running t6
+Running t7
+Running t8
+Running t9
+Running t10
+Crashed! On t10 seed 442
+Traceback (most recent call last):
+  File "run.py", line 98, in main
+    res = test_fn(data)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 209, in t10
+    return t11(mean)
+  File "/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py", line 235, in t11
+    xx = np.sum(X*X,1,keepdims=True)
+  File "<__array_function__ internals>", line 200, in sum
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2324, in sum
+    return _wrapreduction(a, np.add, 'sum', axis, dtype, out, keepdims=keepdims,
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+numpy.AxisError: axis 1 is out of bounds for array of dimension 1
+
+axis 1 is out of bounds for array of dimension 1
+Running t11
+Running t12
+Running t13
+Running t14
+/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py:289: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  return np.linalg.lstsq(X,y)[0]
+Running t15
+Running t16
+Running t17
+Running t18
+Running t19
+Running t20
+Ran all tests
+19/20 = 95.0
+(cv) raynahata@Raynas-MBP numpy % 
+(cv) raynahata@Raynas-MBP numpy % python run.py --alltests
+Running t1
+Running t2
+Running t3
+Running t4
+Running t5
+Running t6
+Running t7
+Running t8
+Running t9
+Running t10
+Running t11
+Running t12
+Running t13
+Running t14
+/Users/raynahata/Desktop/Github/16-720/hw0/numpy/tests.py:288: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  return np.linalg.lstsq(X,y)[0]
+Running t15
+Running t16
+Running t17
+Running t18
+Running t19
+Running t20
+Ran all tests
+20/20 = 100.0
+(cv) raynahata@Raynas-MBP numpy % cd
+(cv) raynahata@Raynas-MBP ~ % cd visualize 
+cd: no such file or directory: visualize
+(cv) raynahata@Raynas-MBP ~ % cd visualize
+cd: no such file or directory: visualize
+(cv) raynahata@Raynas-MBP ~ % cd/Users/raynahata/Desktop/Github/16-720/hw0/visualize 
+zsh: no such file or directory: cd/Users/raynahata/Desktop/Github/16-720/hw0/visualize
+(cv) raynahata@Raynas-MBP ~ % cd /Users/raynahata/Desktop/Github/16-720/hw0/visualize 
+(cv) raynahata@Raynas-MBP visualize % python3
+Python 3.8.18 (default, Sep 11 2023, 08:17:16) 
+[Clang 14.0.6 ] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>  X = np.load("mysterydata/mysterydata.npy")
+  File "<stdin>", line 1
+    X = np.load("mysterydata/mysterydata.npy")
+    ^
+IndentationError: unexpected indent
+>>> X = np.load("mysterydata/mysterydata.npy")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'np' is not defined
+>>> import numpy as np 
+>>> X = np.load("mysterydata/mysterydata.npy")
+>>> X
+array([[[0, 0, 0, ..., 0, 0, 1],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 1],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 1],
+        [0, 0, 0, ..., 0, 0, 1],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint32)
+>>> X.shape 
+(512, 512, 9)
+>>> X.dtype
+dtype('uint32')
+>>> plt.imsave("vis.png",X[:,:,0])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'plt' is not defined
+>>> import os
+>>> import numpy as np
+>>> import matplotlib.pyplot as plt
+>>> import cv2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'cv2'
+>>> import pdb
+>>> plt.imsave("vis.png",X[:,:,0])
+>>> for i in range(9):
+... ...  plt.imsave("vis_%d.png" % i,X[:,:,i])
+  File "<stdin>", line 2
+    ...  plt.imsave("vis_%d.png" % i,X[:,:,i])
+    ^
+IndentationError: expected an indented block
+>>> for i in range(9):
+... plt.imsave("vis_%d.png" % i,X[:,:,i])
+  File "<stdin>", line 2
+    plt.imsave("vis_%d.png" % i,X[:,:,i])
+    ^
+IndentationError: expected an indented block
+>>> for i in range(9):
+... plt.imsave("vis_%d.png" % i,X[:,:,i])
+  File "<stdin>", line 2
+    plt.imsave("vis_%d.png" % i,X[:,:,i])
+    ^
+IndentationError: expected an indented block
+>>> for i in range(9):
+...  plt.imsave("vis_%d.png" % i,X[:,:,i])
+... 
+>>> for i in range(9):
+...  plt.imsave("vis_%d.png" % i,X[:,:,i],cmap=’plasma’)
+  File "<stdin>", line 2
+    plt.imsave("vis_%d.png" % i,X[:,:,i],cmap=’plasma’)
+                                                     ^
+SyntaxError: invalid character in identifier
+>>> for i in range(9):
+...  plt.imsave("vis_%d.png" % i,X[:,:,i],cmap='plasma')
+... 
+>>> for i in range(9):
+...  plt.imsave("vis_%d.png" % i,X[:,:,i],cmap='plasma')
+... 
+>>> for i in range(9):
+...  plt.imsave("vis2%d.png" % i,X[:,:,i],cmap='plasma')
+... 
+>>> for i in range(9):
+...  plt.imsave("vis_%d.png" % i,X[:,:,i])
+... 
+>>> for i in range(9):
+...  plt.imsave("vis2_%d.png" % i,X[:,:,i],cmap='plasma')
+... 
+>>> X = np.load("mysterydata/mysterydata3.npy")
+>>> for i in range(9):
+... plt.imsave("vis3_%d.png" % i,X{:,:,i])
+  File "<stdin>", line 2
+    plt.imsave("vis3_%d.png" % i,X{:,:,i])
+    ^
+IndentationError: expected an indented block
+>>> for i in range(9):
+... plt.imsave("vis3_%d.png" % i,X{:,:,i])
+  File "<stdin>", line 2
+    plt.imsave("vis3_%d.png" % i,X{:,:,i])
+    ^
+IndentationError: expected an indented block
+>>> for i in range(9):
+... for i in range(9):
+  File "<stdin>", line 2
+    for i in range(9):
+    ^
+IndentationError: expected an indented block
+>>> for i in range(9):
+...  plt.imsave("vis3_%d.png" % i,X[:,:,i])
+... 
+>>> np.mean(np.isfinite(X))
+0.6824828253851997
+>>> np.sum( ̃np.isfinite(X))
+  File "<stdin>", line 1
+    np.sum( ̃np.isfinite(X))
+              ^
+SyntaxError: invalid character in identifier
+>>> X=np.nanmax(X)
+>>> X.np.nanmin(X)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'numpy.float32' object has no attribute 'np'
+>>> X=np.nanmin(X)
+>>> for i in range(9):
+...  plt.imsave("vis3_%d.png" % i,X[:,:,i])
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+IndexError: invalid index to scalar variable.
+>>> X
+8222.954
+>>> X = np.load("mysterydata/mysterydata3.npy")
+>>> X = np.load("mysterydata/mysterydata2.npy")
+>>> for i in range(9)
+  File "<stdin>", line 1
+    for i in range(9)
+                    ^
+SyntaxError: invalid syntax
+>>> for i in range(9):
+...  plt.imsave("vis2_%d.png" % i,X[:,:,i])
+... 
+>>> X=np.log(X)
+<stdin>:1: RuntimeWarning: divide by zero encountered in log
+>>> X=np.logp(X)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/raynahata/anaconda3/envs/cv/lib/python3.8/site-packages/numpy/__init__.py", line 320, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'logp'
+>>> X=np.log1p(X)
+<stdin>:1: RuntimeWarning: invalid value encountered in log1p
+>>> X = np.where(X< 0, 1e-10, X)
+>>> X=np.log1p(X)
+>>> for i in range(9):
+...  plt.imsave("vis2_%d.png" % i,X[:,:,i])
+... 
+>>> X = np.load("mysterydata/mysterydata2.npy")
+>>> X=np.log1p(X)
+>>> for i in range(9):
+...  plt.imsave("vis2_%d.png" % i,X[:,:,i])
+... 
+>>> X = np.load("mysterydata/mysterydata3.npy")
+>>> min_val=np.nanmin(X)
+>>> max_val=np.nanmax(X)
+>>> for i in range(9):
+...  plt.imsave("vis3_%d.png" % i,X[:,:,i],vmin=min_val,vmax=max_val)
+... 
+>>> 
